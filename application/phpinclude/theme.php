@@ -1,1 +1,1 @@
-<?php
+<link rel="stylesheet" href="../themes/default/style.css">

@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include('phpinclude/commonmeta.php'); ?>
-    <?php include('phpinclude/commoncss.php'); ?>
-    <?php include('phpinclude/theme.php'); ?>
-    <?php include('phpinclude/commonscript.php'); ?>
+    <?php include('../phpinclude/commonmeta.php'); ?>
+    <?php include('../phpinclude/commoncss.php'); ?>
+    <?php include('../phpinclude/theme.php'); ?>
+    <?php include('../phpinclude/commonscript.php'); ?>
     <title>Teamup</title>
 </head>
 <body>
-    <?php include('phpinclude/navbar.php'); ?>
+    <?php include('../phpinclude/navbar.php'); ?>
 
     <div class="container mt-4">
         <h1>Bienvenue sur Teamup !</h1>
