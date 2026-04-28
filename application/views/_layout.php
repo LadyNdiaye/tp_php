@@ -1,22 +1,29 @@
-<?php
-    include('../comfpl/main.php');
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <?php include('../phpinclude/commonmeta.php'); ?>
-    <?php include('../phpinclude/commoncss.php'); ?>
-    <?php include('../phpinclude/theme.php'); ?>
-    <?php include('../phpinclude/commonscript.php'); ?>
+    
+    <?php
+        // Render CSS du bundle Bootstrap
+        foreach($bootstrap['css'] as $css) {
+            echo '<link rel="stylesheet" href="' . $css . '">' . "\n";
+        }
+    ?>
+
     <title>Teamup</title>
 </head>
 <body>
     <?php include('../phpinclude/navbar.php'); ?>
 
     <div class="container mt-4">
-        <h1>Bienvenue sur Teamup !</h1>
-        <p>Le site est en cours de construction.</p>
+        <?php include('../index_partial.php'); ?>
     </div>
+
+    <?php
+        foreach($bootstrap['scripts'] as $script) {
+            echo '<script src="' . $script . '"></script>' . "\n";
+        }
+    ?>
 
 </body>
 </html>
